@@ -10,8 +10,13 @@ python -m venv activ-logger
 ```sh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
+Activate the venv before using
 ```
-Script\activate
+Scripts\activate
+```
+To create the requirements.txt
+```
+pip freeze > requirements.txt
 ```
 ## Requirement
 - Python 3.8+
@@ -20,6 +25,10 @@ Script\activate
 #### For dev env
 ```
 pip install "fastapi[all]"
+```
+or
+```
+pip install -r requirements.txt
 ```
 
 
